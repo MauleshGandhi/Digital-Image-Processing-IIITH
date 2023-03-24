@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "omr_autograder",
+      "setup": "sudo pip install opencv-python --quiet; sudo pip install numpy --quiet; sudo pip install gdown --quiet; gdown 1bTosj__XNsTcTXzVPnNGC5z-acnT7tjf -q; sudo unzip -qq omr_test_imgs.zip;",
+      "run": "python src/morOMR.py",
+      "input": "6\r\nomr_test_imgs/test.jpg\r\nomr_test_imgs/test1.jpg\r\nomr_test_imgs/test2.jpg\r\nomr_test_imgs/test3.jpg\r\nomr_test_imgs/test4.jpg\r\nomr_test_imgs/test5.jpg",
+      "output": "B\r\nC\r\nA\r\nA\r\nD\r\nA\r\nC\r\nC\r\nA\r\nC\r\nA\r\nB\r\nC\r\nC\r\nB\r\nA\r\nD\r\nB\r\nC\r\nB\r\nD\r\nC\r\nD\r\nB\r\nD\r\nC\r\nD\r\nD\r\nB\r\nC\r\nB\r\nB\r\nD\r\nC\r\nB\r\nC\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nC\r\nB\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\nB\r\n-1\r\nA\r\nA\r\nD\r\nA\r\nC\r\n-1\r\nA\r\nC\r\nA\r\n-1\r\nC\r\nC\r\nB\r\n-1\r\nD\r\nB\r\nC\r\nB\r\nD\r\n-1\r\nD\r\nB\r\nD\r\nC\r\n-1\r\nD\r\nB\r\n-1\r\nB\r\nB\r\nD\r\n-1\r\nB\r\nC\r\nB\r\nC\r\n-1\r\n-1\r\n-1\r\nB\r\nC\r\nC\r\nB\r\nB\r\nC\r\nA\r\nA\r\nD\r\nD\r\nC\r\nC\r\nA\r\nC\r\nA\r\nB\r\nC\r\nC\r\nB\r\nA\r\nD\r\nB\r\nC\r\nB\r\nB\r\nC\r\nB\r\nB\r\nB\r\nB\r\nB\r\nB\r\nB\r\nB\r\nB\r\nB\r\nD\r\nC\r\nB\r\nC\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nC\r\nB\r\nB\r\n-1\r\n-1\r\n-1\r\nD\r\n-1\r\nA\r\nD\r\n-1\r\nC\r\n-1\r\nB\r\nD\r\n-1\r\n-1\r\nD\r\n-1\r\nB\r\n-1\r\nC\r\nB\r\n-1\r\nC\r\n-1\r\n-1\r\nB\r\n-1\r\nC\r\n-1\r\nD\r\nC\r\n-1\r\n-1\r\nB\r\n-1\r\nB\r\n-1\r\nC\r\n-1\r\n-1\r\n-1\r\nD\r\n-1\r\n-1\r\n-1\r\n-1\r\nB\r\n-1\r\n-1\r\nD\r\n-1\r\nC\r\n-1\r\n-1\r\nD\r\n-1\r\nB\r\n-1\r\n-1\r\n-1\r\n-1\r\nB\r\n-1\r\n-1\r\nC\r\n-1\r\n-1\r\n-1\r\nB\r\n-1\r\n-1\r\nC\r\n-1\r\n-1\r\n-1\r\n-1\r\nC\r\n-1\r\n-1\r\n-1\r\nA\r\n-1\r\nD\r\n-1\r\nA\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "Invalid Marking",
+      "setup": "sudo pip install opencv-python --quiet; sudo pip install numpy --quiet; sudo pip install gdown --quiet; gdown 1k9G3Y79tCj0VUQdK-AxFPpqnqCn4kHJw -q; sudo unzip -qq test2_inval_options.zip;",
+      "run": "python src/morOMR.py",
+      "input": "1\r\ntest2_inval_options/test1.jpg",
+      "output": "-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\nD\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\nC\r\n-1\r\nD\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\n-1\r\nC\r\nD\r\nC\r\n-1\r\nB\r\n-1\r\n-1\r\n-1",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 40
+    }
+  ]
+}
